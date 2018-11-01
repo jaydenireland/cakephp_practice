@@ -199,4 +199,5 @@ Type::build('timestamp')
 //Inflector::rules('transliteration', ['/å/' => 'aa']);
 
 
-// Plugin::load('Crud')
+$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv->load();
