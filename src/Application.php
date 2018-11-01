@@ -35,6 +35,10 @@ class Application extends BaseApplication
      */
     public function bootstrap()
     {
+        $this->addPlugin('crud');
+
+        // $this->addPlugin('crud');
+
         // Call parent to load bootstrap from files.
         parent::bootstrap();
 

@@ -77,3 +77,9 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->fallbacks(DashedRoute::class);
 });
+
+Router::extensions(['json', 'xml']);
+Router::scope('/', function ($routes) {
+	$routes->resources('Users');
+
+});
